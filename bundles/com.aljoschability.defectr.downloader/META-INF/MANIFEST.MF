@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Downloader
+Bundle-SymbolicName: com.aljoschability.defectr.downloader;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Bundle-Vendor: Aljoschability
+Require-Bundle: org.apache.commons.io,
+ org.apache.log4j,
+ org.eclipse.core.runtime,
+ org.eclipse.xtend.lib,
+ org.slf4j.api,
+ com.turn.ttorrent;bundle-version="1.4.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy

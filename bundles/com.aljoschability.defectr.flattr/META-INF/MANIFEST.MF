@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Flattr
+Bundle-SymbolicName: com.aljoschability.defectr.flattr;singleton:=true
+Bundle-Version: 0.0.1.qualifier
+Bundle-Vendor: Aljoschability
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtend.lib

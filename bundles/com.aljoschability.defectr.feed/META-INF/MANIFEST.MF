@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Feed
+Bundle-SymbolicName: com.aljoschability.defectr.feed;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Bundle-Vendor: Aljoschability
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Export-Package: com.aljoschability.defectr.feed,
+ com.aljoschability.defectr.feed.parsers,
+ com.aljoschability.defectr.feed.vogel
+Require-Bundle: org.apache.xerces,
+ org.eclipse.emf.ecore.xmi,
+ org.eclipse.xtend.lib,
+ com.aljoschability.defectr

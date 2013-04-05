@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_mrI3YJ67EeKsbsWHORUucw" elementId="org.eclipse.e4.ide.application" bindingContexts="_mrI3aJ67EeKsbsWHORUucw">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_mrI3YZ67EeKsbsWHORUucw" label="Defectr" width="500" height="400">
+    <children xsi:type="basic:PartSashContainer" xmi:id="_Unem0KXQEeKeD_9EMRojiQ" elementId="com.aljoschability.defectr.application.partsashcontainer.0">
+      <children xsi:type="basic:PartSashContainer" xmi:id="_mrJeeZ67EeKsbsWHORUucw" horizontal="true">
+        <children xsi:type="basic:Part" xmi:id="_scc54KW6EeKG69Om4IeuvA" elementId="com.aljoschability.defectr.ui.parts.feeds" contributionURI="bundleclass://com.aljoschability.defectr.application/com.aljoschability.defectr.application.parts.FeedsPart" label="Feeds"/>
+        <children xsi:type="basic:Part" xmi:id="_-346cKW6EeKG69Om4IeuvA" contributionURI="bundleclass://com.aljoschability.defectr.application/com.aljoschability.defectr.application.parts.SamplePart" label="Sample Part"/>
+      </children>
+      <children xsi:type="basic:Part" xmi:id="_Vqx24KXQEeKeD_9EMRojiQ" elementId="com.aljoschability.defectr.ui.parts.controls" contributionURI="bundleclass://com.aljoschability.defectr.ui/com.aljoschability.defectr.ui.PlayerPart" label="Play Controls"/>
+    </children>
+    <mainMenu xmi:id="_mrJecJ67EeKsbsWHORUucw" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_mrJecZ67EeKsbsWHORUucw" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_mrJecp67EeKsbsWHORUucw" label="Open" iconURI="platform:/plugin/com.aljoschability.defectr.application/icons/sample.gif" command="_mrI3b567EeKsbsWHORUucw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_mrJec567EeKsbsWHORUucw" label="Save" iconURI="platform:/plugin/com.aljoschability.defectr.application/icons/save_edit.gif" command="_mrI3cp67EeKsbsWHORUucw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_mrJedJ67EeKsbsWHORUucw" label="Quit" command="_mrI3a567EeKsbsWHORUucw"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_mrJedZ67EeKsbsWHORUucw" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_mrJedp67EeKsbsWHORUucw" label="About" command="_mrI3dZ67EeKsbsWHORUucw"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_MpnSYJ6_EeKl_r52rRALAw" elementId="com.aljoschability.defectr.application.menu.0" label="Test">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Ogab8J6_EeKl_r52rRALAw" label="About" command="_mrI3dZ67EeKsbsWHORUucw"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_mrJefJ67EeKsbsWHORUucw">
+      <children xsi:type="menu:ToolBar" xmi:id="_mrJefZ67EeKsbsWHORUucw" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_mrJefp67EeKsbsWHORUucw" iconURI="platform:/plugin/com.aljoschability.defectr.application/icons/sample.gif" command="_mrI3b567EeKsbsWHORUucw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_mrJef567EeKsbsWHORUucw" iconURI="platform:/plugin/com.aljoschability.defectr.application/icons/save_edit.gif" command="_mrI3cp67EeKsbsWHORUucw"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_mrI3bJ67EeKsbsWHORUucw" contributionURI="bundleclass://com.aljoschability.defectr.application/com.aljoschability.defectr.application.handlers.QuitHandler" command="_mrI3a567EeKsbsWHORUucw"/>
+  <handlers xmi:id="_mrI3cJ67EeKsbsWHORUucw" contributionURI="bundleclass://com.aljoschability.defectr.application/com.aljoschability.defectr.application.handlers.OpenHandler" command="_mrI3b567EeKsbsWHORUucw"/>
+  <handlers xmi:id="_mrI3c567EeKsbsWHORUucw" contributionURI="bundleclass://com.aljoschability.defectr.application/com.aljoschability.defectr.application.handlers.SaveHandler" command="_mrI3cp67EeKsbsWHORUucw"/>
+  <handlers xmi:id="_mrI3dp67EeKsbsWHORUucw" contributionURI="bundleclass://com.aljoschability.defectr.application/com.aljoschability.defectr.application.handlers.AboutHandler" command="_mrI3dZ67EeKsbsWHORUucw"/>
+  <bindingTables xmi:id="_mrI3bZ67EeKsbsWHORUucw" bindingContext="_mrI3aJ67EeKsbsWHORUucw">
+    <bindings xmi:id="_mrI3bp67EeKsbsWHORUucw" keySequence="M1+Q" command="_mrI3a567EeKsbsWHORUucw"/>
+    <bindings xmi:id="_mrI3cZ67EeKsbsWHORUucw" keySequence="M1+O" command="_mrI3b567EeKsbsWHORUucw"/>
+    <bindings xmi:id="_mrI3dJ67EeKsbsWHORUucw" keySequence="M1+S" command="_mrI3cp67EeKsbsWHORUucw"/>
+    <bindings xmi:id="_mrI3d567EeKsbsWHORUucw" keySequence="M1+A" command="_mrI3dZ67EeKsbsWHORUucw"/>
+  </bindingTables>
+  <rootContext xmi:id="_mrI3aJ67EeKsbsWHORUucw" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_mrI3aZ67EeKsbsWHORUucw" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_mrI3ap67EeKsbsWHORUucw" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_mrI3a567EeKsbsWHORUucw" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_mrI3b567EeKsbsWHORUucw" elementId="com.aljoschability.defectr.application.open" commandName="openCommand"/>
+  <commands xmi:id="_mrI3cp67EeKsbsWHORUucw" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_mrI3dZ67EeKsbsWHORUucw" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <addons xmi:id="_mrI3Yp67EeKsbsWHORUucw" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_mrI3Y567EeKsbsWHORUucw" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_mrI3ZJ67EeKsbsWHORUucw" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_mrI3ZZ67EeKsbsWHORUucw" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_mrI3Zp67EeKsbsWHORUucw" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_mrI3Z567EeKsbsWHORUucw" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>

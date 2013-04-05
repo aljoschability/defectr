@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Defectr User Interface
+Bundle-SymbolicName: com.aljoschability.defectr.ui;singleton:=true
+Bundle-Version: 0.0.1.qualifier
+Bundle-Vendor: Aljoschability
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.e4.core.di,
+ org.eclipse.e4.ui.di,
+ org.eclipse.jface,
+ org.eclipse.mylyn.commons.ui,
+ org.eclipse.swt,
+ org.eclipse.ui,
+ org.eclipse.xtend.lib,
+ com.aljoschability.defectr,
+ com.aljoschability.eclipse.core.runtime,
+ com.aljoschability.eclipse.core.ui
+Export-Package: com.aljoschability.defectr.ui,
+ com.aljoschability.defectr.ui.viewers
+Bundle-Activator: com.aljoschability.defectr.ui.Activator
+Bundle-ActivationPolicy: lazy

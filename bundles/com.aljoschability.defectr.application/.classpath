@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins">
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/eclipse/e4/core/contexts/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/e4/core/di/annotations/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/e4/ui/model/application/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/e4/ui/services/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/e4/ui/model/application/ui/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/e4/ui/workbench/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/e4/ui/di/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="src" path="src-xtend"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

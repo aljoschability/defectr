@@ -1,0 +1,125 @@
+/**
+ * <copyright>
+ * 
+ * Copyright 2013 by Aljoschability and others. All rights reserved.
+ * 
+ * This program and its materials are made available under the terms of the
+ * Eclipse Public License v1.0 which should be contained in this distribution.
+ * 
+ * Contributors:
+ *    Aljoscha Hark <aljoschability@gmail.com> - Initial code
+ * 
+ * </copyright>
+ */
+@Ecore(nsURI="http://www.aljoschability.com/defectr/2012")
+@GenModel(copyrightText="<copyright>\r\n\r\nCopyright 2013 by Aljoschability and others. All rights reserved.\r\n\r\nThis program and its materials are made available under the terms of the\r\nEclipse Public License v1.0 which should be contained in this distribution.\r\n\r\nContributors:\r\n   Aljoscha Hark <aljoschability@gmail.com> - Initial code\r\n\r\n</copyright>",
+	complianceLevel="7.0",
+	nonNLSMarkers="true",
+	codeFormatting="true",
+	creationIcons="false",
+	multipleEditorPages="false",
+	suppressEMFModelTags="true",
+	suppressGenModelAnnotations="false",
+	pluginKey="",
+	providerPackageSuffix="edit",
+	modelDirectory="/com.aljoschability.defectr/src/main/xcore",
+	editDirectory="/com.aljoschability.defectr.edit/src/main/xcore",
+	editPluginID="com.aljoschability.defectr.edit",
+	editPluginClass="com.aljoschability.defectr.edit.Activator")
+package com.aljoschability.defectr
+
+import java.util.Date
+
+abstract class Container
+{
+	contains Container[] children opposite parent
+	refers Feed[] feeds opposite containers
+	refers Container parent opposite children
+}
+
+class Feed
+{
+	String[1] title
+	String[1] description
+	contains Link[1] link
+	refers Person editor
+	refers Person webmaster
+	int updateInterval
+	Date lastBuildDate
+	String language
+	String copyright
+	String generator
+	refers Container[] containers opposite feeds
+	contains Episode[] episodes
+	contains FeedImage image
+}
+
+class Link
+{
+	LinkRelation[1] relation
+	String[1] url
+	String title
+	String ^type
+}
+
+enum LinkRelation
+{
+	UNKNOWN
+	PAYMENT
+	SELF
+	HUB
+}
+
+class TimeInterval
+{
+	TimeIntervalType[1] ^type
+	int[1] value
+}
+
+enum TimeIntervalType
+{
+	MINUTE
+	HOUR
+	DAY
+	WEEK
+	MONTH
+	YEAR
+}
+
+class Episode
+{
+	contains Link commentLink
+	contains MediaLink enclosure
+	contains Link[1] link
+	refers Person author
+	refers Category[] categories
+	String[1] description
+	String guid
+	Date pubDate
+	String[1] title
+}
+
+class Category
+{
+	String[] raw
+}
+
+class MediaLink extends Link
+{
+	int[1] length
+}
+
+class FeedImage
+{
+	String[1] url
+	String title
+	String link
+	int width
+	int height
+}
+
+class Person
+{
+	id String mail
+	String[1] title
+}
