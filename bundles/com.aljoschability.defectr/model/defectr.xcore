@@ -23,7 +23,7 @@
 	pluginKey="",
 	providerPackageSuffix="edit",
 	editPluginID="com.aljoschability.defectr.edit",
-	editPluginClass="com.aljoschability.defectr.edit.Activator")
+	editPluginClass="com.aljoschability.defectr.edit.Activator", editDirectory="/com.aljoschability.defectr.edit/src/main/generated-xcore")
 package com.aljoschability.defectr
 
 import java.util.Date

@@ -10,7 +10,7 @@ import org.eclipse.swt.graphics.ImageData;
 
 public class ImageManager {
 	public static Image getImage(String uri) {
-		ImageRegistry registry = null;// TODO:Activator.get().getImageRegistry();
+		ImageRegistry registry = Activator.getImageRegistry();
 
 		Image image = registry.get(uri);
 		if (image == null) {

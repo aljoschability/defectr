@@ -7,8 +7,7 @@ Bundle-Vendor: Aljoschability
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
 Export-Package: com.aljoschability.defectr.feed,
- com.aljoschability.defectr.feed.parsers,
- com.aljoschability.defectr.feed.vogel
+ com.aljoschability.defectr.feed.parsers
 Require-Bundle: org.apache.xerces,
  org.eclipse.emf.ecore.xmi,
  org.eclipse.xtend.lib,

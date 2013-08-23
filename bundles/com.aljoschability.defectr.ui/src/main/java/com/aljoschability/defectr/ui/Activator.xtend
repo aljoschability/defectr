@@ -2,6 +2,7 @@ package com.aljoschability.defectr.ui;
 
 import com.aljoschability.core.ui.runtime.AbstractActivator;
 import com.aljoschability.core.ui.runtime.IActivator;
+import org.eclipse.jface.resource.ImageRegistry
 
 final class Activator extends AbstractActivator {
 	static IActivator INSTANCE
@@ -22,5 +23,9 @@ final class Activator extends AbstractActivator {
 
 	override void dispose() {
 		Activator::INSTANCE = null
+	}
+
+	def static ImageRegistry getImageRegistry() {
+		// TODO: make it visible on upstream
 	}
 }

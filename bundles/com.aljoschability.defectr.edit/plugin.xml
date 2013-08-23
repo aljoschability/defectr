@@ -8,8 +8,8 @@
 
    <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
       <factory
-            uri="http://www.aljoschability.com/defectr"
-            class="com.aljoschability.defectr.provider.DefectrItemProviderAdapterFactory"
+            uri="http://www.aljoschability.com/defectr/2012"
+            class="com.aljoschability.defectr.edit.DefectrItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider
