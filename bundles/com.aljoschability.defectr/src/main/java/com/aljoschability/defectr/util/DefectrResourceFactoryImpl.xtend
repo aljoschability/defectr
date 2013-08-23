@@ -7,12 +7,12 @@ import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
 
 public class DefectrResourceFactoryImpl extends ResourceFactoryImpl {
-	@Override
-	public Resource createResource(URI uri) {
-		XMLResource resource = new XMIResourceImpl(uri);
-		resource.setEncoding("UTF-8");
-		resource.getDefaultSaveOptions().put(XMLResource.OPTION_USE_ENCODED_ATTRIBUTE_STYLE, Boolean.TRUE);
-		resource.getDefaultSaveOptions().put(XMLResource.OPTION_LINE_WIDTH, 0);
+	override Resource createResource(URI uri) {
+		val resource = new XMIResourceImpl(uri)
+
+		resource.setEncoding("UTF-8")
+		resource.getDefaultSaveOptions().put(XMLResource.OPTION_USE_ENCODED_ATTRIBUTE_STYLE, Boolean.TRUE)
+		resource.getDefaultSaveOptions().put(XMLResource.OPTION_LINE_WIDTH, 0)
 
 		return resource;
 	}
