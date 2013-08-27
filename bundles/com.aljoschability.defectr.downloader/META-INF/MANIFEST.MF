@@ -8,7 +8,7 @@ Require-Bundle: org.apache.commons.io,
  org.apache.log4j,
  org.eclipse.core.runtime,
  org.eclipse.xtend.lib,
- org.slf4j.api,
- com.turn.ttorrent;bundle-version="1.4.0"
+ com.turn.ttorrent,
+ org.slf4j.slf4j-api
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
