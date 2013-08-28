@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Downloader
+Bundle-Name: %bundle.name
 Bundle-SymbolicName: com.aljoschability.defectr.downloader;singleton:=true
 Bundle-Version: 0.1.0.qualifier
-Bundle-Vendor: Aljoschability
+Bundle-Vendor: %bundle.vendor
 Require-Bundle: org.apache.commons.io,
  org.apache.log4j,
  org.eclipse.core.runtime,
