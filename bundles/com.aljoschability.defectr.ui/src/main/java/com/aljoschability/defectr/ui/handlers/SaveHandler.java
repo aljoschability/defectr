@@ -8,7 +8,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package com.aljoschability.defectr.application.handlers;
+package com.aljoschability.defectr.ui.handlers;
 
 import java.lang.reflect.InvocationTargetException;
 

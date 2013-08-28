@@ -1,63 +1,65 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
-<copyright>
-	Copyright 2013 by Aljoschability and others. All rights reserved. This
-	program and its materials are made available under the terms of the Eclipse
-	Public License v1.0 which is referenced inside the distribution.
+	Copyright 2013 Aljoschability and others. All rights reserved.
+
+	This program and the accompanying materials are made available under the
+	terms of the Eclipse Public License v1.0 which accompanies this distribution,
+	and is available at http://www.eclipse.org/legal/epl-v10.html
 
 	Contributors:
-		Aljoscha Hark <aljoschability@gmail.com> - Initial code
-
-</copyright>
+		Aljoscha Hark <mail@aljoschability.com>- initial API and implementation
 -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.aljoschability.defectr</groupId>
-	<artifactId>com.aljoschability.defectr.parent</artifactId>
+	<groupId>com.aljoschability</groupId>
+	<artifactId>com.aljoschability.defectr.master</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-
 	<properties>
-		<tycho-version>0.18.1</tycho-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<tycho-version>0.21.0</tycho-version>
+		<xtend.version>2.7.2</xtend.version>
 	</properties>
-
 	<modules>
+		<!-- bundles -->
 		<module>bundles/com.aljoschability.defectr</module>
-		<module>bundles/com.aljoschability.defectr.application</module>
-		<module>bundles/com.aljoschability.defectr.core</module>
 		<module>bundles/com.aljoschability.defectr.downloader</module>
+		<module>bundles/com.aljoschability.defectr.edit</module>
 		<module>bundles/com.aljoschability.defectr.feed</module>
 		<module>bundles/com.aljoschability.defectr.flattr</module>
-		<module>bundles/com.aljoschability.defectr.libraries.mpeg</module>
-		<module>bundles/com.aljoschability.defectr.libraries.vorbis</module>
 		<module>bundles/com.aljoschability.defectr.player</module>
-		<module>bundles/com.aljoschability.defectr.provider</module>
 		<module>bundles/com.aljoschability.defectr.ui</module>
 		<module>bundles/com.aljoschability.defectr.ui.generator</module>
 		<module>bundles/com.aljoschability.defectr.ui.win</module>
+		<!-- repositories -->
+		<module>repositories/com.aljoschability.defectr.product</module>
 	</modules>
-
 	<repositories>
-		<!-- add eclipse kepler repository to resolve basic dependencies -->
 		<repository>
-			<id>eclipse-kepler</id>
+			<id>eclipse-luna</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/kepler</url>
+			<url>http://download.eclipse.org/releases/luna</url>
+		</repository>
+		<repository>
+			<id>eclipse-license</id>
+			<url>http://download.eclipse.org/cbi/updates/license/</url>
+			<layout>p2</layout>
+		</repository>
+		<repository>
+			<id>aljoschability-libraries</id>
+			<url>http://update.aljoschability.com/libs</url>
+			<layout>p2</layout>
 		</repository>
 	</repositories>
-
 	<build>
 		<plugins>
 			<plugin>
-				<!-- enable tycho build extension -->
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-maven-plugin</artifactId>
 				<version>${tycho-version}</version>
 				<extensions>true</extensions>
 			</plugin>
 			<plugin>
-				<!-- enable build environments -->
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>target-platform-configuration</artifactId>
 				<version>${tycho-version}</version>
@@ -66,7 +68,7 @@
 						<environment>
 							<os>win32</os>
 							<ws>win32</ws>
-							<arch>x86</arch>
+							<arch>x86_64</arch>
 						</environment>
 						<environment>
 							<os>linux</os>

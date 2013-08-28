@@ -1,4 +1,4 @@
-package com.aljoschability.defectr.application.parts;
+package com.aljoschability.defectr.ui.parts;
 
 import java.util.ArrayList;
 import java.util.List;

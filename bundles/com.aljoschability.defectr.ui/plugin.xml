@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<extension id="product" point="org.eclipse.core.runtime.products">
+		<product application="org.eclipse.e4.ui.workbench.swt.E4Application" name="Desktop Feed Catcher">
+			<property name="appName" value="Desktop Feed Catcher"/>
+			<property name="applicationCSS" value="platform:/plugin/com.aljoschability.defectr.ui/defectr.css"/>
+			<property name="applicationXMI" value="platform:/plugin/com.aljoschability.defectr.ui/defectr.e4xmi"/>
+		</product>
+	</extension>
+</plugin>

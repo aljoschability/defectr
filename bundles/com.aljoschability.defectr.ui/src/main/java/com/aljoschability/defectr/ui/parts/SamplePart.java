@@ -8,7 +8,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package com.aljoschability.defectr.application.parts;
+package com.aljoschability.defectr.ui.parts;
 
 import javax.annotation.PostConstruct;
 
